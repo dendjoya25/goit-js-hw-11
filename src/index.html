@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
-    <form class="page-form js-page-form" action="">
-      <input class="form-input js-form-input" type="text" />
-      <button class="form-btn js-form-btn" type="submit"></button>
-    </form>
+    <section class="gallery-section">
+      <div class="container">
+        <form class="page-form js-page-form">
+          <input
+            class="form-input js-form-input"
+            type="text"
+            name="user_query"
+            placeholder="Що ви шукаєте?"
+            required
+          />
+          <button class="form-btn js-form-btn" type="submit">Пошук</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+      </div>
+    </section>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
