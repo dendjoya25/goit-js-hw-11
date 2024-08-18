@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
     
-    
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-e9539ef2.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-a088063d.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-a340efa4.css">
   </head>
   <body>
-    <form class="page-form js-page-form" action="">
-      <input class="form-input js-form-input" type="text" />
-      <button class="form-btn js-form-btn" type="submit"></button>
-    </form>
+    <section class="gallery-section">
+      <div class="container">
+        <form class="page-form js-page-form">
+          <input
+            class="form-input js-form-input"
+            type="text"
+            name="user_query"
+            placeholder="Що ви шукаєте?"
+            required
+          />
+          <button class="form-btn js-form-btn" type="submit">Пошук</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+      </div>
+    </section>
+    
   </body>
 </html>
