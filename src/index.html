@@ -9,17 +9,18 @@
   <body>
     <section class="gallery-section">
       <div class="container">
-        <form class="page-form js-page-form">
+        <form class="js-page-form page-form">
           <input
-            class="form-input js-form-input"
+            class="js-form-input form-input"
             type="text"
             name="user_query"
             placeholder="Search images"
             required
           />
-          <button class="form-btn js-form-btn" type="submit">Search</button>
+          <button class="js-form-btn form-btn" type="submit">Search</button>
         </form>
-        <ul class="gallery js-gallery"></ul>
+        <ul class="js-gallery gallery"></ul>
+        <span class="loader js-loader is-hidden"></span>
       </div>
     </section>
     <script type="module" src="./main.js"></script>
