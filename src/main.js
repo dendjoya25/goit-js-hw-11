@@ -15,7 +15,8 @@ const onFormElSubmit = event => {
     .then(data => {
       if (data.hits.length === 0) {
         iziToast.error({
-          message: 'За вашим запитом, зображень не знайдено!',
+          message:
+            'Sorry, there are no images matching your search query. Please try again!',
           position: 'topRight',
         });
         galleryEl.innerHTML = '';
